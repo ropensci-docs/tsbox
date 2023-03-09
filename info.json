@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "c8de915e8d373d9ae58228479dadad3d9d665036",
+    "author": "Christoph Sax <christoph.sax@gmail.com>",
+    "time": "2023-03-09 11:00:21",
+    "files": 2,
+    "merge": true,
+    "message": "Merge pull request #220 from ropensci/maelle-patch-1\n\nAdd software review badge"
+  },
+  "repo": "https://github.com/ropensci/tsbox",
+  "pkg": "tsbox"
+}
