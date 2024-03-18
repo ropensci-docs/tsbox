@@ -1,0 +1,12 @@
+pandoc: 2.16.2
+pkgdown: 2.0.7
+pkgdown_sha: ~
+articles:
+  convert: convert.html
+  ts-functions: ts-functions.html
+  tsbox: tsbox.html
+last_built: 2024-03-18T06:41Z
+urls:
+  reference: https://docs.ropensci.org/tsbox/reference
+  article: https://docs.ropensci.org/tsbox/articles
+

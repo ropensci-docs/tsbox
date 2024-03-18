@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "ad278e22cdc532043e83c938b5aca318e20d2efe",
+    "author": "Christoph Sax <christoph.sax@gmail.com>",
+    "time": "2023-09-20 16:04:07",
+    "files": 1,
+    "merge": false,
+    "message": "v no\n"
+  },
+  "repo": "https://github.com/ropensci/tsbox",
+  "pkg": "tsbox"
+}
