@@ -1,0 +1,12 @@
+{
+  "commit": {
+    "commit": "0a80208f0ff197d7dc88a2a43609be7f8a6cf544",
+    "author": "Christoph Sax <christoph.sax@gmail.com>",
+    "time": "2024-10-20 11:15:22",
+    "files": 6,
+    "merge": true,
+    "message": "Merge pull request #231 from ropensci/b-ggplot-deprec\n\nB ggplot deprec"
+  },
+  "repo": "https://github.com/ropensci/tsbox",
+  "pkg": "tsbox"
+}
