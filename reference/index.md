@@ -1,0 +1,142 @@
+# Package index
+
+## Convert
+
+tsbox is built around a set of converters, which convert time series to
+each other
+
+- [`ts_data.frame()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_df()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_data.table()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_dt()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_tbl()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_tibbletime()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_timeSeries()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_tis()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_ts()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_irts()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_tsibble()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_tslist()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_xts()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_zoo()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md)
+  [`ts_zooreg()`](https://docs.ropensci.org/tsbox/reference/ts_ts.md) :
+  Convert Everything to Everything
+
+## Combine and Separate
+
+A set of helper functions to combine multiple time series
+
+- [`ts_c()`](https://docs.ropensci.org/tsbox/reference/ts_c.md) :
+  Collect Time Series
+- [`ts_bind()`](https://docs.ropensci.org/tsbox/reference/ts_bind.md)
+  [`ts_chain()`](https://docs.ropensci.org/tsbox/reference/ts_bind.md) :
+  Bind Time Series
+- [`ts_span()`](https://docs.ropensci.org/tsbox/reference/ts_span.md) :
+  Limit Time Span
+- [`ts_pick()`](https://docs.ropensci.org/tsbox/reference/ts_pick.md) :
+  Pick Series (Experimental)
+
+## Transform
+
+Transformation functions with a unified interface for common time series
+opperations
+
+- [`ts_scale()`](https://docs.ropensci.org/tsbox/reference/ts_scale.md)
+  : Scale and Center Time Series
+- [`ts_trend()`](https://docs.ropensci.org/tsbox/reference/ts_trend.md)
+  : Loess Trend Estimation
+- [`ts_pc()`](https://docs.ropensci.org/tsbox/reference/ts_pc.md)
+  [`ts_diff()`](https://docs.ropensci.org/tsbox/reference/ts_pc.md)
+  [`ts_pca()`](https://docs.ropensci.org/tsbox/reference/ts_pc.md)
+  [`ts_pcy()`](https://docs.ropensci.org/tsbox/reference/ts_pc.md)
+  [`ts_diffy()`](https://docs.ropensci.org/tsbox/reference/ts_pc.md) :
+  First Differences and Percentage Change Rates
+- [`ts_compound()`](https://docs.ropensci.org/tsbox/reference/ts_index.md)
+  [`ts_index()`](https://docs.ropensci.org/tsbox/reference/ts_index.md)
+  : Indices from Levels or Percentage Rates
+- [`ts_lag()`](https://docs.ropensci.org/tsbox/reference/ts_lag.md) :
+  Lag or Lead of Time Series
+
+## Plot and Summary
+
+Simple and fast plotting and summary functions
+
+- [`ts_summary()`](https://docs.ropensci.org/tsbox/reference/ts_summary.md)
+  : Time Series Properties
+- [`ts_plot()`](https://docs.ropensci.org/tsbox/reference/ts_plot.md) :
+  Plot Time Series
+- [`ts_ggplot()`](https://docs.ropensci.org/tsbox/reference/ts_ggplot.md)
+  [`theme_tsbox()`](https://docs.ropensci.org/tsbox/reference/ts_ggplot.md)
+  [`colors_tsbox()`](https://docs.ropensci.org/tsbox/reference/ts_ggplot.md)
+  [`scale_color_tsbox()`](https://docs.ropensci.org/tsbox/reference/ts_ggplot.md)
+  [`scale_fill_tsbox()`](https://docs.ropensci.org/tsbox/reference/ts_ggplot.md)
+  : Plot Time Series, Using ggplot2
+- [`ts_save()`](https://docs.ropensci.org/tsbox/reference/ts_save.md) :
+  Save Previous Plot
+- [`ts_default()`](https://docs.ropensci.org/tsbox/reference/ts_default.md)
+  : Default Column Names
+
+## Reshape
+
+Reshaping wide data frames into long data frames and back
+
+- [`ts_long()`](https://docs.ropensci.org/tsbox/reference/ts_long.md)
+  [`ts_wide()`](https://docs.ropensci.org/tsbox/reference/ts_long.md) :
+  Reshaping Multiple Time Series
+
+## Frequency
+
+Functions to manipulate frequency
+
+- [`ts_frequency()`](https://docs.ropensci.org/tsbox/reference/ts_frequency.md)
+  : Change Frequency
+- [`ts_regular()`](https://docs.ropensci.org/tsbox/reference/ts_regular.md)
+  : Enforce Regularity
+- [`ts_na_omit()`](https://docs.ropensci.org/tsbox/reference/ts_na_omit.md)
+  : Omit NA values
+- [`ts_first_of_period()`](https://docs.ropensci.org/tsbox/reference/ts_first_of_period.md)
+  : Use First Date of a Period
+
+## User defined ts-functions
+
+`ts_` turns existing functions into functions that can deal with any ts-
+boxable time series object. The example functions are useful themself.
+
+- [`ts_prcomp()`](https://docs.ropensci.org/tsbox/reference/ts_examples.md)
+  [`ts_dygraphs()`](https://docs.ropensci.org/tsbox/reference/ts_examples.md)
+  [`ts_forecast()`](https://docs.ropensci.org/tsbox/reference/ts_examples.md)
+  [`ts_seas()`](https://docs.ropensci.org/tsbox/reference/ts_examples.md)
+  [`ts_na_interpolation()`](https://docs.ropensci.org/tsbox/reference/ts_examples.md)
+  : Principal Components, Dygraphs, Forecasts, Seasonal Adjustment
+- [`load_suggested()`](https://docs.ropensci.org/tsbox/reference/ts_.md)
+  [`ts_()`](https://docs.ropensci.org/tsbox/reference/ts_.md)
+  [`ts_apply()`](https://docs.ropensci.org/tsbox/reference/ts_.md) :
+  Constructing ts-Functions
+- [`copy_class()`](https://docs.ropensci.org/tsbox/reference/copy_class.md)
+  : Re-Class ts-Boxable Object
+- [`relevant_class()`](https://docs.ropensci.org/tsbox/reference/relevant_class.md)
+  : Extract Relevant Class
+- [`ts_boxable()`](https://docs.ropensci.org/tsbox/reference/ts_boxable.md)
+  [`check_ts_boxable()`](https://docs.ropensci.org/tsbox/reference/ts_boxable.md)
+  : Test if an Object is ts-Boxable
+- [`ts_dts()`](https://docs.ropensci.org/tsbox/reference/ts_dts.md) :
+  Internal Time Series Class
+
+## Arithmetic operators
+
+Arithmetic operators can be applied on ts-boxable objects
+
+- [`` `%ts+%` ``](https://docs.ropensci.org/tsbox/reference/ts_arithmetic.md)
+  [`` `%ts-%` ``](https://docs.ropensci.org/tsbox/reference/ts_arithmetic.md)
+  [`` `%ts*%` ``](https://docs.ropensci.org/tsbox/reference/ts_arithmetic.md)
+  [`` `%ts/%` ``](https://docs.ropensci.org/tsbox/reference/ts_arithmetic.md)
+  : Arithmetic Operators for ts-boxable objects
+
+## Others
+
+- [`ts_start()`](https://docs.ropensci.org/tsbox/reference/tsbox-defunct.md)
+  [`ts_end()`](https://docs.ropensci.org/tsbox/reference/tsbox-defunct.md)
+  : Start and end of time series
+- [`tsbox-package`](https://docs.ropensci.org/tsbox/reference/tsbox-package.md)
+  [`tsbox`](https://docs.ropensci.org/tsbox/reference/tsbox-package.md)
+  : tsbox: Class-Agnostic Time Series

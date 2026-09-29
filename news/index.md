@@ -1,0 +1,237 @@
+# Changelog
+
+## tsbox 0.4.2
+
+CRAN release: 2024-10-22
+
+### Bug fixes
+
+- ts_ggplot: pass symbols, not strings (fix
+  [\#223](https://github.com/ropensci/tsbox/issues/223))
+- scale_color_tsbox / scale_fill_tsbox: deprecated ds argument
+- dectime_to_POSIXct(): fix calc and rounding of seconds
+  ([\#228](https://github.com/ropensci/tsbox/issues/228)) Thanks Miguel!
+
+## tsbox 0.4.1 (2023-05-06)
+
+CRAN release: 2023-05-08
+
+### Bug fixes
+
+- Fix an issue with a test
+
+## tsbox 0.4 (2023-03-08)
+
+CRAN release: 2023-03-08
+
+### Features
+
+- Comply with rOpenSci Standards
+- Better test coverage
+- Support for ‘zooreg’ time series
+
+### Documentation
+
+- better error messages when input is not ts-boxable
+- better error messages when data is non-standard
+- New repository: <https://github.com/ropensci>
+- New documentation website: <https://docs.ropensci.org/tsbox>
+
+### Bug fixes
+
+- ts_long() works with on a wider set of data frames
+- ts_plot() works better when applied on non-standard data frame
+- ts_first_of_period works with POSIXct
+  [\#210](https://github.com/ropensci/tsbox/issues/210)
+- avoid date classes not getting respected by stopifnot,
+  [\#213](https://github.com/ropensci/tsbox/issues/213)
+
+## tsbox 0.3.1 (2021-09-16)
+
+CRAN release: 2021-09-16
+
+### Bug fixes
+
+- Fix CRAN issues on Mac
+
+## tsbox 0.3.0 (2021-07-26)
+
+CRAN release: 2021-07-29
+
+### Features
+
+- export ts_first_of_period
+  [\#178](https://github.com/ropensci/tsbox/issues/178)
+- regular zoo and xts can be processed
+  [\#175](https://github.com/ropensci/tsbox/issues/175),
+  [\#189](https://github.com/ropensci/tsbox/issues/189)
+- ts_na_interpolation() exported and added to examples in ?ts_examples
+  [\#127](https://github.com/ropensci/tsbox/issues/127)
+- support regular timestamps in tsibble
+  [\#196](https://github.com/ropensci/tsbox/issues/196)
+- ensure time is always ordered
+  [\#202](https://github.com/ropensci/tsbox/issues/202)
+- ts_index(): base period can be entered as a range
+  [\#188](https://github.com/ropensci/tsbox/issues/188)
+- ts_frequency() also works for weeks, sec, min, hours
+  [\#183](https://github.com/ropensci/tsbox/issues/183)
+
+### Bug fixes
+
+- ts to data frame conversion works with slight offsets
+  [\#186](https://github.com/ropensci/tsbox/issues/186)
+- ts_trend does retransform
+  [\#193](https://github.com/ropensci/tsbox/issues/193)
+- tslist: Use ids to name single elements if possible
+  [\#194](https://github.com/ropensci/tsbox/issues/194)
+- ts_bind works with short series and scalars
+  [\#197](https://github.com/ropensci/tsbox/issues/197)
+- more tolerance towards misspecified ts objects
+  [\#195](https://github.com/ropensci/tsbox/issues/195)
+- ts_wide does not fail on tsibble etc.
+  [\#173](https://github.com/ropensci/tsbox/issues/173)
+
+### Documentation
+
+- point to tempdisagg::td() for low to high frequency conversion
+  [\#142](https://github.com/ropensci/tsbox/issues/142)
+- better error messages if series contain duplicates
+  [\#181](https://github.com/ropensci/tsbox/issues/181)
+- better error messages when converting one row data frames
+  [\#179](https://github.com/ropensci/tsbox/issues/179)
+- better error messages when time col contains NA
+  [\#184](https://github.com/ropensci/tsbox/issues/184)
+
+## tsbox 0.2.1 (2020-04-29)
+
+CRAN release: 2020-04-29
+
+### Bug fixes
+
+- Fix test case that failed with dplyr 1.0
+  [\#182](https://github.com/ropensci/tsbox/issues/182)
+
+## tsbox 0.2.0 (2019-08-06)
+
+CRAN release: 2019-08-06
+
+### Features
+
+- Construction of expressions for data.tables are done properly and now
+  are able to contain spaces or non-ASCII characters
+  ([\#151](https://github.com/ropensci/tsbox/issues/151), thanks
+  [@stefanfritsch](https://github.com/stefanfritsch))
+- ts_default() puts data frames in default order (ids, time, value)
+  ([\#166](https://github.com/ropensci/tsbox/issues/166))
+- Consistent handling of non-default colnames and colorder in data
+  frames ([\#166](https://github.com/ropensci/tsbox/issues/166))
+- Support for ‘tis’ time series
+  ([\#150](https://github.com/ropensci/tsbox/issues/150))
+- Support for ‘irts’ time series, from package tseries
+- Tweaks to color schemes
+
+### Bug fixes
+
+- High-frequency conversion works with daylight saving time
+  ([\#152](https://github.com/ropensci/tsbox/issues/152))
+- Do not run x13binary in tests on Solaris
+  ([\#143](https://github.com/ropensci/tsbox/issues/143))
+- Use `key = id` when creating a tsibble
+  ([\#156](https://github.com/ropensci/tsbox/issues/156))
+- ts_trend passes arguments to loess
+  ([\#147](https://github.com/ropensci/tsbox/issues/147))
+- ts_summary works with single or irregular observations
+  ([\#145](https://github.com/ropensci/tsbox/issues/145),
+  [\#146](https://github.com/ropensci/tsbox/issues/146))
+- ts_frequency handles na.rm correctly
+  ([\#148](https://github.com/ropensci/tsbox/issues/148))
+- handles data sets from tsibbledata
+  ([\#164](https://github.com/ropensci/tsbox/issues/164))
+- ts_lag handles negative `by` argument correctly
+  ([\#177](https://github.com/ropensci/tsbox/issues/177))
+
+## tsbox 0.1.0 (2019-04-03)
+
+CRAN release: 2019-04-03
+
+### Changes
+
+- Rectangular structures (`data.frame`, `tibble`, `data.table`) keep
+  explicit NAs by default. Use
+  [`ts_na_omit()`](https://docs.ropensci.org/tsbox/reference/ts_na_omit.md)
+  to make explicit NAs implicit. As previously,
+  [`ts_regular()`](https://docs.ropensci.org/tsbox/reference/ts_regular.md)
+  makes implicit NAs explicit.
+
+### New Functions and Features
+
+- `ts_default`, new function to change column names to defaults (time,
+  value), so that no auto detection is performed afterwards
+  ([\#118](https://github.com/ropensci/tsbox/issues/118))
+- `ts_summary`, returns a data frame with summary information of a
+  ts-boxable object. Also used to extract time series properties
+  (`ts_summary(x)$start`, `ts_summary(x)$freq`, etc.)
+- `ts_regular` gains `fill` argument, to specify replacement value for
+  `NA` ([\#101](https://github.com/ropensci/tsbox/issues/101))
+- `ts_pc`, `ts_pcy`, `ts_diff`, `ts_diffy` have been rewritten and are
+  much faster. They now return a series of the same length as the input,
+  with `NA`s at the beginning.
+- `ts_pca`, new function to calculate annualized percentage change rate
+- `ts_span` gains `extend` argument, to add explicit `NA`s
+
+### Bug fixes
+
+- `ts_apply` pass on arguments. This allows functions generated by ts\_
+  to pass on additional arguments. E.g.,
+  `ts_seas(AirPassengers, x11 = "")`
+  ([\#115](https://github.com/ropensci/tsbox/issues/115),
+  [\#103](https://github.com/ropensci/tsbox/issues/103))
+- unnamed `tslist` objects of length 1 don’t get an id anymore
+  ([\#116](https://github.com/ropensci/tsbox/issues/116))
+- `ts_span` various fixes, boundary specification by shift string
+  (`"1 year"`) or period now works as expected, also for non-heuristic
+  series, such as `EuStockMarkets`
+  ([\#106](https://github.com/ropensci/tsbox/issues/106))
+- time column of daily data is treated as Date and survives two way
+  conversion ([\#114](https://github.com/ropensci/tsbox/issues/114),
+  [\#137](https://github.com/ropensci/tsbox/issues/137))
+- `ts_pick`, error if picked series is not in data
+  ([\#100](https://github.com/ropensci/tsbox/issues/100))
+- error when data contains duplicated series
+  ([\#102](https://github.com/ropensci/tsbox/issues/102))
+- `ts_plot`, improved axis labels for high frequency series
+  ([\#117](https://github.com/ropensci/tsbox/issues/117))
+- fixed tsibble to anything conversion
+
+### Deprecated
+
+- `ts_start`, `ts_end`, use `ts_summary(x)$start` and
+  `ts_summary(x)$end` instead.
+
+## tsbox 0.0.3 (2018-06-18)
+
+CRAN release: 2018-06-18
+
+### Features
+
+- Support for `tibbletime` time series
+  ([\#90](https://github.com/ropensci/tsbox/issues/90))
+
+### Bug fixes
+
+- Automatically detect numbers or text from 1600 to 2200 as time column
+  ([\#92](https://github.com/ropensci/tsbox/issues/92))
+- Fix to correctly ensure uniqueness of non unique id combinations
+  ([\#93](https://github.com/ropensci/tsbox/issues/93))
+- Fix to correctly parse `POSIXct` columns for monthly data in different
+  time zones. Remove two way testing for daily series with `POSIXct`
+  columns. This should fix mac binary build on CRAN
+  ([\#97](https://github.com/ropensci/tsbox/issues/97))
+
+## tsbox 0.0.2 (2018-05-12)
+
+CRAN release: 2018-05-14
+
+### Features
+
+- initial version
